@@ -1,7 +1,6 @@
 stages:
 - name: compile
   steps:
-  - runScriptConfig:
-      image: alpine
-      shellScript: "ls \npwd"
+  - applyYamlConfig:
+      path: job/job_sample/job.yaml
 timeout: 60
