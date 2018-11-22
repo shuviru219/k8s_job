@@ -1,0 +1,6 @@
+stages:
+- name: compile
+  steps:
+  - applyYamlConfig:
+      path: k8s_job/job/job_sample/job.yaml
+timeout: 60
