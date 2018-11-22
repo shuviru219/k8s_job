@@ -1,6 +1,7 @@
 stages:
 - name: compile
   steps:
-  - applyYamlConfig:
-      path: k8s_job/job/job_sample/job.yaml
+  - runScriptConfig:
+      image: alpine
+      shellScript: "ls \npwd"
 timeout: 60
